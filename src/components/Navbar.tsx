@@ -3,20 +3,20 @@ import React from "react";
 const Navbar = () => {
     return (
         <nav className={'nav'}>
-            <div>
-                <a href={'#'}>Profile</a>
+            <div className={'nav__link'}>
+                <a>Profile</a>
             </div>
-            <div>
-                <a href={'#'}>Messages</a>
+            <div className={'nav__link'}>
+                <a>Messages</a>
             </div>
-            <div>
-                <a href={'#'}>News</a>
+            <div className={'nav__link'}>
+                <a>News</a>
             </div>
-            <div>
-                <a href={'#'}>Music</a>
+            <div className={'nav__link'}>
+                <a>Music</a>
             </div>
-            <div>
-                <a href={'#'}>Settings</a>
+            <div className={'nav__link'}>
+                <a>Settings</a>
             </div>
         </nav>
         )
