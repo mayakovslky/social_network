@@ -1,17 +1,18 @@
 import React from "react";
 import ninjaOnline from '../ninjaOnline.webp';
 import ninjaWallpaper from '../wallpaperNinja.png';
+import s from './Profile.module.css';
 
 const Profile = () => {
     return (
-        <div className={'content'}>
+        <div className={s.content}>
             <div>
                 <img
                     src={ninjaWallpaper}
                     alt="Content"/>
             </div>
             <div>
-                <img className={'avatar'}
+                <img className={s.avatar}
                      src={ninjaOnline}
                      alt="Avatar"/>
                 description
@@ -20,8 +21,10 @@ const Profile = () => {
                 My posts
                 <div>New post</div>
             </div>
-            <div>post1</div>
-            <div>post2</div>
+            <div className={s.posts}>
+                <div className={s.item}>post1</div>
+                <div>post2</div>
+            </div>
         </div>
     )
 }
